@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" class="transition-colors duration-300">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zip Checker</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class'
+    }
+  </script>
+  <style>
+    body {
+      font-size: 1.1rem; /* Increased base font size for better readability */
+    }
+    .fade-in {
+      animation: fadeIn 0.3s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-white dark:from-gray-900 dark:to-gray-800 min-h-screen flex flex-col justify-between px-4 transition-colors duration-300">
+
+  <main class="flex flex-1 items-center justify-center">
+    <div class="bg-white dark:bg-gray-900 p-10 rounded-3xl shadow-2xl w-full max-w-md text-center fade-in relative transition-colors duration-300">
+
+      <!-- 🌙 Dark mode icon button -->
+
+
+      <!-- Logo -->
+      <img src="logo.png" alt="Credit America Logo" class="mx-auto mb-6 h-20 w-auto">
+
+      <form onsubmit="return false" class="space-y-6">
+        <button type="submit" id="submit"
+                class="w-full bg-blue-600 text-white font-bold text-lg py-3 rounded-xl hover:bg-blue-700 transition-all duration-200"
+                onclick="window.location.href='https://dmncbt.github.io/zip-checker/';">
+          New Bath ZIP Checker
+        </button>
+        <button type="submit" id="submit"
+                class="w-full bg-blue-600 text-white font-bold text-lg py-3 rounded-xl hover:bg-blue-700 transition-all duration-200"
+                onclick="window.location.href='https://dmncbt.github.io/Esler-Zip-Checker/';">
+          Esler Zip Checker
+        </button>
+      </form>
+
+      <h2 id="result" class="mt-6 text-xl font-medium"></h2>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 text-sm text-gray-600 dark:text-gray-400">
+    Compiler | Property of IGrant Marketing Services Inc.
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
